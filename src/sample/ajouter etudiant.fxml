@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appController">
+   <children>
+      <Label layoutX="160.0" layoutY="57.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" text="ajouter etudiant" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nom" layoutX="176.0" layoutY="140.0" prefHeight="14.0" prefWidth="155.0" />
+      <JFXTextField fx:id="pre" layoutX="176.0" layoutY="182.0" />
+      <JFXButton fx:id="save" buttonType="RAISED" layoutX="380.0" layoutY="416.0" onAction="#enregistrerEtudiant" text="Enregistrer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="416.0" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXButton>
+      <Label layoutX="61.0" layoutY="157.0" text="Nom" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="199.0" text="Prenom" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="250.0" text="Date de Naissance" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="318.0" text="Specialite" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmb" editable="true" labelFloat="true" layoutX="171.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#speccombo" prefHeight="30.0" prefWidth="155.0" promptText="choisir specialite">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></JFXComboBox>
+      <JFXDatePicker fx:id="dn" layoutX="189.0" layoutY="246.0" />
+   </children>
+</AnchorPane>
